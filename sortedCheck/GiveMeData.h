@@ -1,0 +1,23 @@
+#ifndef GiveMeData_h
+#define GiveMeData_h
+
+void giveMeSortedData(long* list, long size){
+    // These numbers will be sorted
+    for (long i = 0; i < size; i++) {
+        list[i] = i;
+        std::cout << list[i] << std::endl;
+    }
+}
+
+void giveMeUnsortedData(long* list, long size){
+    for (long i = 0; i < size; i++) {
+        list[i] = i;
+        
+        std::cout << list[i] << std::endl;
+    }
+    // Making the last value -1 breaks the sortedness
+    list[size-1] = -1;
+    //std::cout << list[size-1] << std::endl;
+}
+
+#endif
